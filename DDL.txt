@@ -1,0 +1,8 @@
+CREATE TABLE produk_lipstick (
+    nama_produk VARCHAR(255),
+    varian_warna VARCHAR(255),
+    hex_code VARCHAR(10),
+    harga VARCHAR(20),
+    deskripsi TEXT,
+    link_produk TEXT
+);
