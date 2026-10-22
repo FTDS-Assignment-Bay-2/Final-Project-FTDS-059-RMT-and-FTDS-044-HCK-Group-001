@@ -74,6 +74,9 @@ Pemeriksaan pada kedua file di repository menunjukkan **226 baris**, tanpa nilai
 **Penggunaan data:** informasi produk dapat diakses melalui website brand, tetapi akses publik tidak otomatis berarti data berlisensi *public domain*. Perhatikan ketentuan penggunaan dari masing-masing sumber sebelum pendistribusian atau penggunaan komersial.
 
 ## 4. Metodologi dan Alur Aplikasi
+<p align="center">
+  <img src="images/application_workflow.png" alt="LipMatch AI Application Workflow" width="100%">
+</p>
 
 ### Tahap Analisis
 
@@ -125,6 +128,8 @@ Final-Project-FTDS-059-RMT-and-FTDS-044-HCK-Group-001/
 ├── LipMatch_AI.ipynb                 # Eksperimen analisis warna & rekomendasi
 ├── Final Project_Brainstorming.pdf   # Proposal dan business understanding
 ├── gx/                               # Konfigurasi Great Expectations
+└── images/
+    ├── application_workflow.png      # workflow aplikasi
 └── lipmatch_ai_streamlit/
     ├── app.py                        # Aplikasi utama
     ├── dataset.csv                   # Katalog yang dibaca aplikasi
