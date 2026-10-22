@@ -75,21 +75,6 @@ Pemeriksaan pada kedua file di repository menunjukkan **226 baris**, tanpa nilai
 
 ## 4. Metodologi dan Alur Aplikasi
 
-```mermaid
-flowchart TD
-    A[Upload foto / kamera] --> B[Deteksi wajah dengan MediaPipe]
-    B --> C[Sampling warna pipi kiri, pipi kanan, dan dahi]
-    C --> D[Median RGB dan konversi CIELAB]
-    D --> E[Estimasi kategori Warm / Cool / Neutral]
-    C --> F[Cosine Similarity RGB dengan warna katalog]
-    G[Dataset lipstik: HEX dan informasi produk] --> F
-    F --> H[Top 3 shade per kategori katalog]
-    B --> I[Deteksi kontur bibir dan masking]
-    H --> J[Hasil rekomendasi dan informasi produk]
-    I --> K[Virtual try-on untuk shade terpilih]
-    H --> K
-```
-
 ### Tahap Analisis
 
 1. **Face detection:** MediaPipe Face Landmarker mendeteksi titik wajah pada foto pengguna.
